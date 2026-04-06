@@ -12,7 +12,7 @@ Good additions usually have all or most of the following:
 
 - clear, direct OpenClaw relevance
 - a working repository, website, or documentation page
-- active maintenance **or** durable reference value
+- latest meaningful commit within the last **30 days**
 - a specific, understandable purpose
 - a natural fit in an existing README category
 
@@ -43,6 +43,7 @@ Please avoid adding:
 - Keep descriptions short, factual, and neutral.
 - Put each project in its strongest single category.
 - If a project is already listed, improve the existing entry instead of duplicating it elsewhere.
+- For code repositories, require a latest meaningful commit within the last **30 days**.
 - Prefer quality over quantity.
 
 ## Entry Format
@@ -102,7 +103,7 @@ Before opening a PR, check:
 
 ### Automation Note
 
-- PRs authored by the trusted automation account `alvinreal` may be auto-merged **only** when they are README-only, single-category, non-structural, mechanically safe changes that pass all required checks.
+- PRs authored by the trusted automation account `alvinreal` may be auto-merged **only** when they are README-only, non-structural, mechanically safe changes that pass all required checks.
 - Community PRs are never auto-merged.
 - Changes to `.moltfounders/` and other governance/process files never auto-merge.
 

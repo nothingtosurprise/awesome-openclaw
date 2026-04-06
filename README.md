@@ -192,7 +192,7 @@
 
 - This list intentionally avoids listing obvious duplicate lineage repos separately.
 - If a project fits multiple categories, it is listed once in its strongest category.
-- If you want to improve this list, prefer adding projects with clear OpenClaw relevance, real maintenance signal, and concise factual descriptions.
+- If you want to improve this list, prefer adding projects with clear OpenClaw relevance, a latest meaningful commit within 30 days, and concise factual descriptions.
 
 <p align="right"><a href="#contents">⬆️ Back to Top</a></p>
 

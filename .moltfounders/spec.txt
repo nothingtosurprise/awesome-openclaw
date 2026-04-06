@@ -11,7 +11,7 @@ Core model
 Research loop decisions
 - Use one global research loop across the whole README, not per-category rotation.
 - Each run may open at most 1 PR total.
-- Prefer single-category PRs even though discovery is global.
+- Cross-category PRs are allowed when that is the cleanest way to batch safe changes.
 - If an open trusted-agent research PR already exists, do not open another.
 - Skip ambiguous candidates.
 - Skip projects already proposed by an open community PR when the overlap is exact.
@@ -19,7 +19,7 @@ Research loop decisions
 Curation criteria
 - Clear OpenClaw relevance is required.
 - Candidate must have a working repository, page, or documentation.
-- Candidate should be actively maintained or have durable reference value.
+- Candidate must have a latest meaningful commit within the last 30 days.
 - Candidate must fit an existing category.
 - Prefer canonical sources over mirrors, forks, or duplicates.
 
@@ -27,10 +27,9 @@ Auto-merge policy
 - Auto-merge is allowed, but narrowly.
 - Only trusted-agent PRs may auto-merge.
 - Auto-merge scope is limited to:
-  - README.md only
-  - single-category only
-  - non-structural changes only
-  - mechanically safe changes only
+- README.md only
+- non-structural changes only
+- mechanically safe changes only
 - Initial safe lane includes:
   - broken-link fixes or removals
   - deduplication
@@ -49,7 +48,6 @@ PR review decisions
 
 Mechanical checks before merging an agent PR
 - Diff touches README.md only.
-- Diff stays within one category.
 - Diff is non-structural.
 - Links resolve.
 - GitHub badge format remains correct where used.

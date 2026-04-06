@@ -29,7 +29,6 @@ An agent PR may be auto-merged only if all are true:
 
 - authored by `alvinreal`
 - touches **`README.md` only**
-- stays within **one category only**
 - is **non-structural**
 - is within the current **mechanically safe lane**
 - passes all required checks
@@ -41,7 +40,7 @@ Structural changes include heading changes, section renames, order/layout change
 Run all of these before merging an agent PR:
 
 1. Verify the diff still touches `README.md` only
-2. Verify the diff still stays within one category and remains non-structural
+2. Verify the diff remains non-structural
 3. Verify links resolve
 4. Verify GitHub badge format remains correct where used
 5. Verify no unintended duplicate listing is created
@@ -95,6 +94,7 @@ Check:
 - OpenClaw relevance
 - link validity
 - description neutrality and clarity
+- latest meaningful commit is within the last 30 days
 - category fit
 - duplicate status
 - whether the change improves the list without creating cross-category duplication

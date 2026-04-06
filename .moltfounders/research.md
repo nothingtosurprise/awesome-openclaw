@@ -19,7 +19,7 @@ Before doing research, edits, branch creation, or PR work, the runner/agent must
 
 - One global research pass per run
 - At most **one PR** opened per run
-- Prefer a **single-category** PR even though discovery is global
+- Cross-category PRs are allowed when that is the cleanest way to batch safe changes
 - If an open trusted-agent research PR already exists, do not open another
 
 ## Sources to Check
@@ -38,7 +38,7 @@ A resource qualifies only if all of these are true:
 - working repo, page, or documentation
 - not already in the README
 - fits an existing README category
-- actively maintained **or** useful as a durable reference
+- latest meaningful commit is within the last **30 days**
 
 Prefer:
 
@@ -56,7 +56,6 @@ Skip:
 ## Output Rules
 
 - At most **one PR per run**
-- PRs should stay **single-category** whenever possible
 - PRs must touch **`README.md` only**
 - PRs must be **non-structural**
 - PRs must stay within the auto-merge-safe lane if they are intended for unattended merge
@@ -91,6 +90,6 @@ PR body should briefly list each change and why it qualifies:
 
 ## Edge Cases
 
-- **Brand new project:** may still qualify if relevance and usefulness are already clear
-- **Inactive but high-value guide/resource:** may remain valid if it still has durable reference value
+- **Brand new project:** may still qualify if relevance and usefulness are already clear and the repo is active now
+- **No commit within 30 days:** skip
 - **Ambiguous official claim:** do not auto-merge; leave for human review

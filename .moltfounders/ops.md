@@ -32,7 +32,7 @@ Rules:
 1. Use one global research pass across the whole README, not per-category rotation.
 2. Open at most ONE PR per run.
 3. If an open trusted-agent research PR already exists, do not open another.
-4. Prefer a single-category PR even though discovery is global.
+4. Cross-category PRs are allowed when that is the cleanest way to batch safe changes.
 5. Touch README.md only.
 6. Keep changes non-structural.
 7. Skip ambiguous candidates.
@@ -83,7 +83,6 @@ For each open PR:
 6. Agent PRs may auto-merge only if all are true:
    - authored by alvinreal
    - README.md only
-   - single-category only
    - non-structural
    - mechanically safe
    - all required checks pass
@@ -95,7 +94,6 @@ For each open PR:
    - official OpenClaw resource additions or updates
 8. Required checks before merging an agent PR:
    - diff still touches README.md only
-   - diff stays within one category
    - diff is non-structural
    - links resolve
    - badge format remains correct where used
